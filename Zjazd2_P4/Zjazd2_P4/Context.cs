@@ -13,18 +13,6 @@ namespace Zjazd2_P4
             base.OnConfiguring(optionsBuilder);
             optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Database=EFCE;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
         }
-        //Fluent
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //    base.OnModelCreating(modelBuilder);
-        //    modelBuilder
-        //        .Entity<Zajecia>()
-        //        .HasKey(x => x.Id);
-        //    modelBuilder
-        //        .Entity<Zajecia>()
-        //        .Property(x => x.Nazwa)
-        //            .IsRequired();
-       
-        //}
+
     }
 }
